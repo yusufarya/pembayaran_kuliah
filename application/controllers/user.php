@@ -14,8 +14,8 @@ class User extends CI_Controller
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 		$data['title'] = 'My Profile';
 
-		$data['jurusan'] = $this->Model_user->getUser();
-		$data['jurusan'] = $this->db->get('jurusan')->result_array();
+		$data['mahasiswa'] = $this->Model_user->getUserjoin('user', ['email' => $this->session->userdata('email')]);
+		$data['nama_jurusan'] = $this->db->get('jurusan')->row_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar', $data);

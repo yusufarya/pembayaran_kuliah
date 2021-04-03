@@ -18,9 +18,21 @@
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="name" class="col-sm-3 col-form-label text-white">Nim</label>
+					<label for="nim" class="col-sm-3 col-form-label text-white">Nim</label>
 					<div class="col-lg-8">
 						<input type="text" class="form-control" id="nim" name="nim" value="<?php echo $user['nim'] ?>" readonly>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="nama_jurusan" class="col-sm-3 col-form-label text-white">Jurusan</label>
+					<div class="col-lg-8">
+						<input type="text" class="form-control" id="nama_jurusan" name="nama_jurusan" value="<?php echo $user['nama_jurusan'] ?>" readonly>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="kd_kelas" class="col-sm-3 col-form-label text-white">Kelas</label>
+					<div class="col-lg-8">
+						<input type="text" class="form-control" id="kd_kelas" name="kd_kelas" value="<?php echo $user['kd_kelas'] ?>" readonly>
 					</div>
 				</div>
 				<div class="form-group row">

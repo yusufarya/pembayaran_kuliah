@@ -19,13 +19,14 @@
               <div class="form-group row mt-3">
                 <h2 class="ml-4 text-dark"><?php echo $user['nama'] ?></h2>
                 <table class="table table-striped mx-3 text-dark">
+
                   <tr>
                     <th>Nim</th>
                     <td><?php echo $user['nim'] ?></td>
                   </tr>
                   <tr>
                     <th>Jurusan</th>
-                    <td></td>
+                    <td><?php echo $user['nama_jurusan'] ?></td>
                   </tr>
                   <tr>
                     <th>Kelas</th>
@@ -43,6 +44,8 @@
                     <th>Alamat Lengkap</th>
                     <td><?php echo $user['alamat'] ?></td>
                   </tr>
+
+
                 </table>
                 <div class="col-sm-4 ml-2">
                   <a class="btn btn-sm btn-info form-control" href="<?php echo base_url('user/edit_profile') ?>"><i class="fas fa-fw fa-user-edit"></i> Lengkapi Profile</a>
