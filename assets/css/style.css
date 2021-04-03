@@ -1,0 +1,29 @@
+body {
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	opacity: .9;
+}
+
+.bg-content {
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	opacity: 10;
+}
+
+.bg-transparant {
+	background-image: linear-gradient(to top, #a6eff7, #b2e2ed, azure);
+}
+
+.card {
+	background-image: linear-gradient(to bottom, #eaeaea,  azure, #fff);
+	opacity: 999999999;
+}
+
+.card-block {
+	/*background-image: url('../img/bg.jpg');*/
+	background-image: linear-gradient(to bottom, #a6eff7,  #eee, #fff);
+	background-color: #fff;
+	background-position: center;
+}
